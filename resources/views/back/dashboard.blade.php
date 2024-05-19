@@ -64,7 +64,7 @@
               <td>
                 {{-- <a href="{{ url('/back/portofolio/delete/'.$data->id) }}" class="btn btn-danger">Delete</a> --}}
                 <a href="#" class="btn btn-danger" onclick="confirmDelete('{{ url('/dashboard/delete/'.$data->id) }}')">Delete</a>
-                <a href="{{ url('/dashboard/update/'.$data->id) }}" class="btn btn-success" >Update</a>
+                <a href="#" class="btn btn-success" onclick="confirmUpdate('{{ url('/dashboard') }}')">Update</a>
               </td>
             </tr>
             @endforeach
@@ -89,6 +89,17 @@
         // Redirect to the delete URL
         window.location.href = url;
       }
+    });
+  }
+  function confirmUpdate(url) {
+    Swal.fire({
+      title: "Maaf",
+      text: "Demi Kevalidan dan keaslian pesan data tidak dapat diubah",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "OK"
     });
   }
 </script>
