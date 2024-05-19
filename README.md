@@ -23,6 +23,7 @@
 
 
 <h3 align="left">Resource used:</h3>
+
 ![image](https://github.com/ElKaTuFv/UAS_Sem_IV/assets/113596217/db1e2433-77c0-4a76-bf74-a42d2ba0219b)
 
 <h3 align="left">Website preview:</h3>
